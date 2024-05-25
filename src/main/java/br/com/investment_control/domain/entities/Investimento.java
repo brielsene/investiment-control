@@ -26,4 +26,15 @@ public class Investimento {
         this.valor = valor;
 
     }
+
+    public Investimento(Long id, String descricao, BigDecimal valor, String hostname, String ipHost, LocalDateTime dataInvestimento) {
+        this.id = id;
+        this.descricao = descricao;
+        this.valor = valor;
+        this.hostname = hostname;
+        this.ipHost = ipHost;
+        this.dataInvestimento = dataInvestimento;
+    }
+
+
 }
