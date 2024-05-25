@@ -18,16 +18,16 @@ public class Investimento {
     private LocalDateTime dataInvestimento;
 
     public Investimento(String descricao, BigDecimal valor) {
-        if(valor.compareTo(BigDecimal.ZERO) <0){
-            throw new IllegalArgumentException("Não é permitido valor menor que zero");
-
-        }
         this.descricao = descricao;
         this.valor = valor;
 
     }
 
     public Investimento(Long id, String descricao, BigDecimal valor, String hostname, String ipHost, LocalDateTime dataInvestimento) {
+        if(valor.compareTo(BigDecimal.ZERO) <0){
+            throw new IllegalArgumentException("Não é permitido valor menor que zero");
+
+        }
         this.id = id;
         this.descricao = descricao;
         this.valor = valor;
