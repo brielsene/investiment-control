@@ -1,0 +1,1 @@
+[Investimento(id=null, descricao=teste, valor=1350.5, hostname=null, ipHost=null, dataInvestimento=2024-05-25T11:08:43.908400700)]
